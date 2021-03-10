@@ -4,14 +4,14 @@
           <tab-bar-item path='/home' activeColor='red'>
               <template  v-slot:item-icon>
                   <div>
-                      <img src="" alt="">
-                      <img src="" alt="">
+                      <img src="~img/tabbar/home.svg" alt="">
+                  
                       
                   </div>
               </template>
                <template  v-slot:item-icon-active>
                   <div>
-                      <img src='' alt="">
+                      <img src='~img/tabbar/active.svg' alt="">
                   </div>
               </template>
                <template  v-slot:item-text>
@@ -24,14 +24,13 @@
            <tab-bar-item path='/category' activeColor='green'>
                <template  v-slot:item-icon>
                   <div>
-                      <img src="assets/img/tabbar/fenbushi.svg" alt="">
+                      <img src="~img/tabbar/fenbushi.svg" alt="">
                   </div>
               </template>
               <template  v-slot:item-icon-active>
                   <div>
-                      <img src="../../../_assets" alt="">
-                      <img src="../../../src/assets" alt="">
-                      <img src="assets/img/tabbar/active.svg" alt="">
+                      
+                      <img src="~img/tabbar/active.svg" alt="">
                   </div>
               </template>
                <template  v-slot:item-text>
@@ -43,12 +42,12 @@
             <tab-bar-item path='/cart' activeColor='green'>
                 <template  v-slot:item-icon>
                   <div>
-                      <img src="~assets/img/tabbar/car.svg" alt="">
+                      <img src="~img/tabbar/car.svg" alt="">
                   </div>
               </template>
               <template  v-slot:item-icon-active>
                   <div>
-                      <img src="~assets/img/tabbar/active.svg" alt="">
+                      <img src="~img/tabbar/active.svg" alt="">
                   </div>
               </template>
                <template  v-slot:item-text>
@@ -60,12 +59,12 @@
              <tab-bar-item path='/profile' activeColor='green'>
                  <template  v-slot:item-icon>
                   <div>
-                      <img src="~assets/img/tabbar/user.svg" alt="">
+                      <img src="~img/tabbar/user.svg" alt="">
                   </div>
               </template>
               <template  v-slot:item-icon-active>
                   <div>
-                      <img src="~assets/img/tabbar/active.svg" alt="">
+                      <img src="~img/tabbar/active.svg" alt="">
                   </div>
               </template>
                <template  v-slot:item-text>
@@ -79,8 +78,8 @@
 </template>
 
 <script>
-import  TabBar from './tabbar/TabBar'
-import TabBarItem from './tabbar/TabBarItem'
+import  TabBar from 'components/common/tabbar/TabBar'
+import TabBarItem from 'components/common/tabbar/TabBarItem'
 export default {
 
   name:'MainTabBar',
