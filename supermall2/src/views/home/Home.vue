@@ -6,7 +6,7 @@
       </template>
     </nav-bar>
     <home-swiper :banners="banners" />
-    <!-- <recommend-view :recommends="recommends" /> -->
+    <recommend-view :recommends="recommends" />
   </div>
 </template>
 
@@ -14,13 +14,11 @@
 import NavBar from "components/common/navbar/NavBar.vue";
 import HomeSwiper from "./childrenComps/HomeSwiper";
 import RecommendView from "./childrenComps/RecommendView.vue";
-
 import { getHomeMultidata } from "network/home.js";
 export default {
-  components: { NavBar, HomeSwiper, RecommendView },
   name: "Home",
-
-  RecommondViewdata() {
+  components: { NavBar, HomeSwiper, RecommendView },
+  data() {
     return {
       banners: [],
       recommends: [],
@@ -31,6 +29,8 @@ export default {
       .then((res) => {
         this.banners = res.data.banner.list;
         this.recommends = res.data.recommend.list;
+        console.log(this.banners);
+        console.log(this.recommends);
       })
       .catch((err) => {
         console.log(err);

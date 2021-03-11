@@ -8,7 +8,10 @@ const routes = [{
   redirect: '/home'
 }, {
   path: '/home',
-  component: () => import('views/home/Home.vue')
+  component: () => import('views/home/Home.vue'),
+  children: {
+    path: '/multidata'
+  }
 }, {
   path: '/cart',
   component: () => import('views/cart/Cart.vue')

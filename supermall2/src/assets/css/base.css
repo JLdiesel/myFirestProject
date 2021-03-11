@@ -22,7 +22,7 @@ body{
     /*禁止用户鼠标在页面上选中文字/图片等 */
      user-select: none;
      -webkit-tap-highlight-color: transparent;
-    background: var(--color-text);
+    background: var(--color-background);
     color: var(--color-text);
     width: 100vw;
 }
